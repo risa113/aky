@@ -1,3 +1,4 @@
+﻿import { getAsset } from '../utils/assets';
 export const collegeInfo = {
   name: "AKY Polytechnic College",
   fullName: "AKY POLYTECHNIC COLLEGE",
@@ -12,7 +13,7 @@ export const collegeInfo = {
   founder: {
     name: "AKY Syed Abdul Kader",
     title: "Founder & Managing Trustee",
-    image: "/images/about/founder.jpg",
+    image: getAsset("/images/about/founder.jpg"),
     quote: "All birds find shelter during a rain. But an Eagle avoids rain by flying above the Clouds.",
     scientistQuoteAuthor: "Dr. A.P.J. Abdul Kalam",
     chineseProverb: "While planning for a year – sow corn; While planning for a decade – plant trees; While planning for a life – train and educate people.",
@@ -24,43 +25,43 @@ export const collegeInfo = {
 
 export const heroSlides = [
   {
-    image: "/images/about/college-facts1.jpg",
+    image: getAsset("/images/about/college-facts1.jpg"),
     title: "Main Campus Entrance Arch & Academic Wing",
     subtitle: "Opp. Vallavankottai Bus Stand, Tirunelveli - Tenkasi Highway",
     tag: "Campus Entrance"
   },
   {
-    image: "/images/about/campus1.jpg",
+    image: getAsset("/images/about/campus1.jpg"),
     title: "AKY Polytechnic College Main Academic Building",
     subtitle: "Modern multi-storey engineering wings with green landscaped grounds",
     tag: "Academic Complex"
   },
   {
-    image: "/images/about/transport.jpg",
+    image: getAsset("/images/about/transport.jpg"),
     title: "College Bus Fleet for Safe & Punctual Transit",
     subtitle: "Covering all major transit routes across Tirunelveli, Tenkasi & Alangulam",
     tag: "Transport Network"
   },
   {
-    image: "/images/about/placement.jpg",
+    image: getAsset("/images/about/placement.jpg"),
     title: "Building Careers with Assured Corporate Placements",
     subtitle: "Students holding multiple appointment offer letters from core engineering industries",
     tag: "Placement Success"
   },
   {
-    image: "/images/gallery/mech/1.jpg",
+    image: getAsset("/images/gallery/mech/1.jpg"),
     title: "Advanced Heavy Lathe & Machine Tool Workshop",
     subtitle: "Intensive shop-floor hands-on engineering training from semester one",
     tag: "Engineering Labs"
   },
   {
-    image: "/images/about/lifeataky.jpg",
+    image: getAsset("/images/about/lifeataky.jpg"),
     title: "Interactive Classroom & Technical Seminar Sessions",
     subtitle: "Dedicated faculty mentorship guiding students in engineering fundamentals",
     tag: "Classroom Learning"
   },
   {
-    image: "/images/about/culture.jpg",
+    image: getAsset("/images/about/culture.jpg"),
     title: "Vibrant Campus Life & Traditional Celebrations",
     subtitle: "Holistic student personality development through sports and cultural events",
     tag: "Campus Life"
@@ -72,7 +73,7 @@ export const managementTeam = [
     id: 1,
     name: "AKY Syed Abdul Kader",
     role: "Founder, Chairman & Managing Trustee",
-    image: "/images/about/founder.jpg",
+    image: getAsset("/images/about/founder.jpg"),
     quote: "All birds find shelter during a rain. But an Eagle avoids rain by flying above the Clouds.",
     org: "AKY Charitable and Educational Trust",
     desc: "Philanthropist and educational visionary committed to bringing modern technical education and high-paying engineering careers to rural youth of Tirunelveli."
@@ -81,7 +82,7 @@ export const managementTeam = [
     id: 2,
     name: "Board of Trustees",
     role: "Governing Council & Management",
-    image: "/images/about/college-facts2.jpg",
+    image: getAsset("/images/about/college-facts2.jpg"),
     quote: "While planning for a life – train and educate people.",
     org: "AKY Charitable and Educational Trust",
     desc: "Overseeing state-of-the-art laboratory infrastructure, transport network across Tirunelveli-Tenkasi highway, student scholarships, and campus facilities."
@@ -90,7 +91,7 @@ export const managementTeam = [
     id: 3,
     name: "Academic Directorship & Principal",
     role: "Head of Institution & Academic Council",
-    image: "/images/about/campus2.jpg",
+    image: getAsset("/images/about/campus2.jpg"),
     quote: "Skill • Knowledge • Innovation • Career",
     org: "AKY Polytechnic College",
     desc: "Guiding faculty excellence, DOTE curriculum rigor, hands-on workshop training, and 100% placement assurance in leading engineering MNCs."
@@ -109,7 +110,7 @@ export const departments = [
     icon: "architecture",
     iconColor: "text-[#e8a317]",
     iconBg: "bg-[#e8a317]",
-    image: "/images/gallery/civil/1.jpg",
+    image: getAsset("/images/gallery/civil/1.jpg"),
     shortDesc: "Comprehensive instruction in Surveying, CAD & Structural Drafting, Soil Mechanics, Construction Material Testing, and Environmental Engineering.",
     overview: "The Department of Civil Engineering at AKY Polytechnic College imparts rigorous training in fundamental concepts and modern practices of civil infrastructure development. Students gain extensive hands-on experience in leveling, theodolite surveying, total station, concrete testing, and CAD building drafting.",
     vision: "To develop ethically grounded, innovative civil diploma engineers equipped with modern surveying and construction competencies capable of driving sustainable infrastructure.",
@@ -147,7 +148,7 @@ export const departments = [
     icon: "settings",
     iconColor: "text-primary",
     iconBg: "bg-primary-container",
-    image: "/images/gallery/mech/1.jpg",
+    image: getAsset("/images/gallery/mech/1.jpg"),
     shortDesc: "Advanced training in CAD/CAM design, CNC machining centers, Thermal fluid power, Mechatronics, and Industrial manufacturing safety.",
     overview: "Mechanical Engineering is the backbone of modern industrial manufacturing and automation. The department provides intensive shop-floor exposure covering CNC turning & milling, welding, foundry, automotive engines, heat transfer, and automated pneumatic systems.",
     vision: "To produce industry-ready mechanical diploma holders adept in modern design tools, precision manufacturing, and thermal sciences with leadership qualities.",
@@ -187,7 +188,7 @@ export const departments = [
     icon: "bolt",
     iconColor: "text-[#39A935]",
     iconBg: "bg-[#39A935]",
-    image: "/images/course/cu-4.jpg",
+    image: getAsset("/images/course/cu-4.jpg"),
     shortDesc: "Power systems, AC/DC heavy motors, PLC automation, Electrical drafting, renewable energy grids, and high-voltage circuit protection.",
     overview: "The Department of Electrical & Electronics Engineering trains students in generation, transmission, distribution, and control of electrical energy. Practical training emphasizes domestic & industrial wiring, winding of transformers, PLC programming, solar PV installations, and power electronics drives.",
     vision: "To instill comprehensive technical knowledge in electrical machines, power electronics, and automation enabling graduates to spearhead energy transition.",
@@ -225,7 +226,7 @@ export const departments = [
     icon: "sensors",
     iconColor: "text-primary-dark",
     iconBg: "bg-primary",
-    image: "/images/gallery/ece/1.jpg",
+    image: getAsset("/images/gallery/ece/1.jpg"),
     shortDesc: "Microcontroller programming, VLSI principles, IoT embedded devices, wireless communication networks, and optical fiber transmission technology.",
     overview: "Electronics & Communication Engineering bridges hardware and software. Students learn semiconductor design, RF communication, wireless networking, audio-video transmission, embedded systems, PCB etching, and IoT sensor integration.",
     vision: "To cultivate competent electronics professionals capable of designing and maintaining cutting-edge telecommunication and embedded electronic systems.",
@@ -259,7 +260,7 @@ export const facilities = [
     id: "library",
     title: "Central Library",
     icon: "menu_book",
-    image: "/images/about/library.jpg",
+    image: getAsset("/images/about/library.jpg"),
     desc: "Extensive textbooks, national journals & digital reading room with DELNET access.",
     detail: "Over 12,000 engineering volumes, reference books, subscribed national technical journals, previous university question papers, and an automated digital library section with high-speed internet."
   },
@@ -267,7 +268,7 @@ export const facilities = [
     id: "laboratories",
     title: "Modern Laboratories",
     icon: "science",
-    image: "/images/gallery/mech/3.jpg",
+    image: getAsset("/images/gallery/mech/3.jpg"),
     desc: "High-end CNC, electrical machines, material testing & computing labs with industry equipment.",
     detail: "Over 20 well-equipped laboratories across Civil, Mechanical, EEE, and ECE disciplines adhering strictly to DOTE and AICTE safety and equipment standards."
   },
@@ -275,7 +276,7 @@ export const facilities = [
     id: "sports",
     title: "Sports & Athletics",
     icon: "sports_cricket",
-    image: "/images/about/sports.jpg",
+    image: getAsset("/images/about/sports.jpg"),
     desc: "Expansive grounds for cricket, volleyball, kabaddi, football & athletic track.",
     detail: "Dedicated Physical Education Director conducting regular inter-polytechnic tournaments, annual sports day, yoga sessions, and physical conditioning."
   },
@@ -283,7 +284,7 @@ export const facilities = [
     id: "transport",
     title: "Bus Fleet Transport",
     icon: "directions_bus",
-    image: "/images/about/transport.jpg",
+    image: getAsset("/images/about/transport.jpg"),
     desc: "Dedicated fleet of college buses operating across Tirunelveli, Tenkasi & Alangulam routes.",
     detail: "GPS-enabled institutional buses offering safe, punctual daily transit for day-scholar students and faculty covering all major towns in Tirunelveli and Tenkasi districts."
   },
@@ -291,7 +292,7 @@ export const facilities = [
     id: "canteen",
     title: "Hygienic Canteen",
     icon: "restaurant",
-    image: "/images/about/canteen.jpg",
+    image: getAsset("/images/about/canteen.jpg"),
     desc: "Nutritious, freshly prepared meals, healthy snacks and refreshments daily.",
     detail: "Spacious dining hall monitored for utmost cleanliness and hygiene, serving nutritious South Indian breakfast, lunch, and tea at subsidized rates."
   },
@@ -299,7 +300,7 @@ export const facilities = [
     id: "internet",
     title: "Internet & Wi-Fi",
     icon: "wifi",
-    image: "/images/about/internet.jpg",
+    image: getAsset("/images/about/internet.jpg"),
     desc: "High-speed optical fiber connectivity campus-wide for digital learning and research.",
     detail: "100+ Mbps leased line fiber optic network providing uninterrupted internet access in computer centers, faculty rooms, and library."
   },
@@ -307,7 +308,7 @@ export const facilities = [
     id: "auditorium",
     title: "Auditorium & Halls",
     icon: "theater_comedy",
-    image: "/images/about/campus2.jpg",
+    image: getAsset("/images/about/campus2.jpg"),
     desc: "Acoustically treated auditorium for technical symposiums, guest lectures and cultural events.",
     detail: "Fully furnished hall equipped with professional projection systems, high-fidelity sound, and air-conditioning for seminars and workshops."
   },
@@ -315,7 +316,7 @@ export const facilities = [
     id: "hostel",
     title: "Secure Hostels",
     icon: "hotel",
-    image: "/images/about/hostel.jpg",
+    image: getAsset("/images/about/hostel.jpg"),
     desc: "Safe, warden-monitored residential facilities with study tables and RO drinking water.",
     detail: "Separate safe residential accommodations with 24/7 security, warden supervision, recreation rooms, and medical first-aid."
   },
@@ -323,7 +324,7 @@ export const facilities = [
     id: "training",
     title: "Training & Dev",
     icon: "model_training",
-    image: "/images/about/training-development.jpg",
+    image: getAsset("/images/about/training-development.jpg"),
     desc: "Continuous soft-skills, communicative English and technical aptitude enhancement programs.",
     detail: "Regular career readiness workshops, CAD certification courses, mock group discussions, and personality grooming starting from semester 3."
   },
@@ -331,19 +332,19 @@ export const facilities = [
     id: "placement",
     title: "Placement Support",
     icon: "handshake",
-    image: "/images/about/placement.jpg",
+    image: getAsset("/images/about/placement.jpg"),
     desc: "Dedicated Placement Cell arranging campus interviews with leading industrial recruiters.",
     detail: "Active corporate tie-ups with automotive, civil infrastructure, manufacturing, and electrical engineering firms facilitating high placement conversion."
   }
 ];
 
 export const recruiters = [
-  { name: "TATA", division: "Motors & Steel", logo: "/images/patnar-logo/p-1.png", color: "text-[#0756a6]" },
-  { name: "TVS", division: "Motor Company", logo: "/images/patnar-logo/p-3.png", color: "text-red-600" },
-  { name: "ASHOK LEYLAND", division: "Commercial Vehicles", logo: "/images/patnar-logo/p-4.png", color: "text-[#0756a6]" },
-  { name: "MAHINDRA", division: "Automotive Division", logo: "/images/patnar-logo/p-5.png", color: "text-red-700" },
-  { name: "L&T", division: "Construction & Tech", logo: "/images/patnar-logo/p-6.png", color: "text-[#0756a6]" },
-  { name: "INFOSYS", division: "Technical Support", logo: "/images/patnar-logo/p-7.png", color: "text-blue-600" }
+  { name: "TATA", division: "Motors & Steel", logo: getAsset("/images/patnar-logo/p-1.png"), color: "text-[#0756a6]" },
+  { name: "TVS", division: "Motor Company", logo: getAsset("/images/patnar-logo/p-3.png"), color: "text-red-600" },
+  { name: "ASHOK LEYLAND", division: "Commercial Vehicles", logo: getAsset("/images/patnar-logo/p-4.png"), color: "text-[#0756a6]" },
+  { name: "MAHINDRA", division: "Automotive Division", logo: getAsset("/images/patnar-logo/p-5.png"), color: "text-red-700" },
+  { name: "L&T", division: "Construction & Tech", logo: getAsset("/images/patnar-logo/p-6.png"), color: "text-[#0756a6]" },
+  { name: "INFOSYS", division: "Technical Support", logo: getAsset("/images/patnar-logo/p-7.png"), color: "text-blue-600" }
 ];
 
 export const initialNews = [
@@ -390,73 +391,73 @@ export const galleryItems = [
     id: 1,
     category: "Campus",
     title: "AKY Polytechnic College Red Arch Entrance Gate",
-    imageUrl: "/images/about/college-facts1.jpg"
+    imageUrl: getAsset("/images/about/college-facts1.jpg")
   },
   {
     id: 2,
     category: "Campus",
     title: "Campus Main Administration Building & Facade",
-    imageUrl: "/images/about/campus1.jpg"
+    imageUrl: getAsset("/images/about/campus1.jpg")
   },
   {
     id: 3,
     category: "Laboratories",
     title: "Mechanical Lathe Workshop & Students in Uniform",
-    imageUrl: "/images/gallery/mech/1.jpg"
+    imageUrl: getAsset("/images/gallery/mech/1.jpg")
   },
   {
     id: 4,
     category: "Laboratories",
     title: "Civil Engineering Surveying Lab & Field Instruments",
-    imageUrl: "/images/gallery/civil/1.jpg"
+    imageUrl: getAsset("/images/gallery/civil/1.jpg")
   },
   {
     id: 5,
     category: "Laboratories",
     title: "Electronics & Microcontroller Testing Lab",
-    imageUrl: "/images/gallery/ece/1.jpg"
+    imageUrl: getAsset("/images/gallery/ece/1.jpg")
   },
   {
     id: 6,
     category: "Industrial Visits",
     title: "Student Training & Placement Offer Letters Distribution",
-    imageUrl: "/images/about/placement.jpg"
+    imageUrl: getAsset("/images/about/placement.jpg")
   },
   {
     id: 7,
     category: "Campus",
     title: "AKY College Bus Transport Fleet",
-    imageUrl: "/images/about/transport.jpg"
+    imageUrl: getAsset("/images/about/transport.jpg")
   },
   {
     id: 8,
     category: "Events",
     title: "Students Life at AKY Classroom & Interactive Seminars",
-    imageUrl: "/images/about/lifeataky.jpg"
+    imageUrl: getAsset("/images/about/lifeataky.jpg")
   },
   {
     id: 9,
     category: "Events",
     title: "Social Responsibility & Community Outreach Camp",
-    imageUrl: "/images/about/social-responsibility.jpg"
+    imageUrl: getAsset("/images/about/social-responsibility.jpg")
   },
   {
     id: 10,
     category: "Campus",
     title: "Central Library & Digital Reading Hall",
-    imageUrl: "/images/about/library.jpg"
+    imageUrl: getAsset("/images/about/library.jpg")
   },
   {
     id: 11,
     category: "Events",
     title: "Annual Sports Tournament & Athletic Ground",
-    imageUrl: "/images/about/sports.jpg"
+    imageUrl: getAsset("/images/about/sports.jpg")
   },
   {
     id: 12,
     category: "Events",
     title: "Traditional Cultural Festival & Pongal Celebration",
-    imageUrl: "/images/about/culture.jpg"
+    imageUrl: getAsset("/images/about/culture.jpg")
   }
 ];
 
