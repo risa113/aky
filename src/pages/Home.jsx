@@ -28,6 +28,7 @@ import {
   heroSlides, 
   managementTeam 
 } from '../data/mockData';
+import { getAsset } from '../utils/assets';
 
 export default function Home() {
   const [currentSlide, setCurrentSlide] = useState(0);
@@ -165,7 +166,7 @@ export default function Home() {
                   className="w-full h-full object-cover object-center transition-all duration-700 ease-out select-none"
                   onError={(e) => {
                     e.target.onerror = null;
-                    e.target.src = "/images/about/college-facts1.jpg";
+                    e.target.src = getAsset("/images/about/college-facts1.jpg");
                   }}
                 />
 
@@ -573,7 +574,7 @@ export default function Home() {
                       className="w-full h-full object-cover"
                       onError={(e) => {
                         e.target.onerror = null;
-                        e.target.src = "/images/about/founder.jpg";
+                        e.target.src = getAsset("/images/about/founder.jpg");
                       }}
                     />
                     <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent"></div>
@@ -712,7 +713,7 @@ export default function Home() {
                       className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
                       onError={(e) => {
                         e.target.onerror = null;
-                        e.target.src = "/images/about/founder.jpg";
+                        e.target.src = getAsset("/images/about/founder.jpg");
                       }}
                     />
                     <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-transparent to-transparent"></div>
@@ -834,7 +835,7 @@ export default function Home() {
               <div 
                 className="h-80 sm:h-96 w-full bg-cover bg-center opacity-50"
                 style={{
-                  backgroundImage: `url('/images/about/placement.jpg')`
+                  backgroundImage: `url('${getAsset('/images/about/placement.jpg')}')`
                 }}
               ></div>
               <div className="absolute inset-0 bg-gradient-to-t from-black/90 via-black/50 to-transparent p-6 sm:p-8 flex flex-col justify-end">

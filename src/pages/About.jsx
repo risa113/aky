@@ -13,6 +13,7 @@ import {
   ShieldCheck
 } from 'lucide-react';
 import { collegeInfo } from '../data/mockData';
+import { getAsset } from '../utils/assets';
 
 export default function About() {
   const values = [
@@ -79,7 +80,7 @@ export default function About() {
           <div className="lg:col-span-5">
             <div className="relative rounded-2xl overflow-hidden shadow-xl border border-gray-200">
               <img 
-                src="/images/about/college-facts1.jpg" 
+                src={getAsset("/images/about/college-facts1.jpg")} 
                 alt="AKY Polytechnic College Main Entrance Arch" 
                 className="w-full h-80 sm:h-96 object-cover"
               />
@@ -182,7 +183,7 @@ export default function About() {
                   className="w-full h-full object-cover"
                   onError={(e) => {
                     e.target.onerror = null;
-                    e.target.src = "/images/about/founder.jpg";
+                    e.target.src = getAsset("/images/about/founder.jpg");
                   }}
                 />
               </div>
