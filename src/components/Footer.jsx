@@ -89,7 +89,7 @@ export default function Footer() {
             </div>
             <div className="flex items-center gap-3">
               <Phone className="w-4 h-4 text-[#8bfc7c] shrink-0" />
-              <div className="space-x-2">
+              <div className="flex flex-wrap items-center gap-1.5 sm:gap-2">
                 <a href={`tel:${collegeInfo.phones[0]}`} className="hover:text-white transition-colors">
                   {collegeInfo.phones[0]}
                 </a>
