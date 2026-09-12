@@ -39,28 +39,28 @@ export default function Navbar() {
 
   return (
     <header className="w-full sticky top-0 z-50 bg-white/95 backdrop-blur-md shadow-sm border-b border-gray-100">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-2.5 sm:py-3 flex items-center justify-between gap-4">
+      <div className="max-w-7xl mx-auto px-3 sm:px-6 lg:px-8 py-2 sm:py-3 flex items-center justify-between gap-2 sm:gap-4">
         
         {/* Brand Logo & Title Area */}
-        <Link to="/" className="flex items-center gap-2.5 sm:gap-3 group shrink-0">
+        <Link to="/" className="flex items-center gap-2 sm:gap-3 group min-w-0 flex-1 sm:flex-initial">
           <img 
             src={logoImg} 
             alt="AKY Polytechnic College Crest" 
-            className="h-10 sm:h-12 md:h-14 w-auto object-contain transition-transform group-hover:scale-105"
+            className="h-9 sm:h-12 md:h-14 w-auto object-contain shrink-0 transition-transform group-hover:scale-105"
             onError={(e) => {
               e.target.onerror = null;
               e.target.src = "https://lh3.googleusercontent.com/aida-public/AB6AXuDbCtpqCzaVipVcAZqYmz-eD9wO2TV11o6UFm2bCQ8kFkp53ka-xVPDJKdwWgLqY_VENH0lQRaG1g65ROoe0974OVW8r13mQHyuYJrg1Nzowfg3t4us6qivUodD8_EiQXiAqQNYmRhConhHRujtRInp_Hjfw3ZB1qUp74u0p56zYDkev29sYnp4UOdQA4tMhWBtlquOZH1Th4eihQmsoneXIGL4lKCEFCHLKvQs_mH9u2Fy8L7n7xTHpOdxnwUYAXiwXcU";
             }}
           />
-          <div className="flex flex-col">
-            <span className="text-base sm:text-lg md:text-xl font-headline font-bold text-[#003f7e] tracking-tight uppercase leading-tight">
+          <div className="flex flex-col min-w-0">
+            <span className="text-[13px] sm:text-base md:text-xl font-headline font-bold text-[#003f7e] tracking-tight uppercase leading-tight truncate">
               AKY POLYTECHNIC COLLEGE
             </span>
-            <span className="hidden sm:inline-block text-[10px] text-gray-500 font-medium tracking-wide">
+            <span className="hidden sm:inline-block text-[10px] text-gray-500 font-medium tracking-wide truncate">
               (A Unit of AKY Charitable and Educational Trust) • AICTE Approved & DOTE Affiliated
             </span>
-            <span className="sm:hidden text-[9px] text-gray-500 font-medium tracking-tight">
-              AICTE Approved • DOTE Affiliated (592)
+            <span className="sm:hidden text-[9px] text-gray-500 font-medium tracking-tight truncate">
+              AICTE Approved • DOTE (Code: 592)
             </span>
           </div>
         </Link>
@@ -144,13 +144,13 @@ export default function Navbar() {
         </nav>
 
         {/* Action Button & Hamburger Toggle */}
-        <div className="flex items-center gap-2 sm:gap-3">
+        <div className="flex items-center gap-1.5 sm:gap-3 shrink-0">
           <Link
             to="/admissions"
-            className="inline-flex items-center justify-center gap-1.5 bg-[#e8a317] hover:bg-[#d49411] text-[#001b3d] font-headline text-xs sm:text-sm px-3.5 sm:px-5 py-2 sm:py-2.5 rounded-lg shadow-sm hover:shadow font-bold active:scale-95 transition-all"
+            className="inline-flex items-center justify-center gap-1 bg-[#e8a317] hover:bg-[#d49411] text-[#001b3d] font-headline text-xs sm:text-sm px-2.5 sm:px-5 py-1.5 sm:py-2.5 rounded-lg shadow-sm hover:shadow font-bold active:scale-95 transition-all whitespace-nowrap"
           >
             <span>APPLY NOW</span>
-            <ArrowRight className="w-3.5 h-3.5 sm:w-4 sm:h-4" />
+            <ArrowRight className="w-3 h-3 sm:w-4 sm:h-4 shrink-0" />
           </Link>
 
           {/* Mobile Menu Button */}
@@ -158,9 +158,9 @@ export default function Navbar() {
             type="button"
             aria-label="Toggle Navigation Menu"
             onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
-            className="xl:hidden p-2 rounded-lg text-gray-700 hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-[#0756a6]"
+            className="xl:hidden p-1.5 sm:p-2 rounded-lg text-gray-700 hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-[#0756a6]"
           >
-            {mobileMenuOpen ? <X className="w-6 h-6" /> : <Menu className="w-6 h-6" />}
+            {mobileMenuOpen ? <X className="w-5 h-5 sm:w-6 sm:h-6" /> : <Menu className="w-5 h-5 sm:w-6 sm:h-6" />}
           </button>
         </div>
       </div>

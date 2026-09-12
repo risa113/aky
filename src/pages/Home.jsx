@@ -102,46 +102,46 @@ export default function Home() {
     <div className="space-y-0">
 
       {/* HERO SECTION WITH LARGE DEDICATED CAMPUS IMAGE SHOWCASE */}
-      <section className="relative overflow-hidden bg-gradient-to-b from-[#051d3b] via-[#082a52] to-[#0a192f] text-[#f9f9ff] pt-6 sm:pt-10 pb-16 sm:pb-20" id="home">
+      <section className="relative overflow-hidden bg-gradient-to-b from-[#051d3b] via-[#082a52] to-[#0a192f] text-[#f9f9ff] pt-4 sm:pt-10 pb-12 sm:pb-20 w-full" id="home">
         
         {/* Subtle geometric grid background */}
         <div className="absolute inset-0 bg-[radial-gradient(#1e4976_1px,transparent_1px)] [background-size:24px_24px] opacity-25 pointer-events-none"></div>
 
-        <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div className="relative max-w-7xl mx-auto px-3 sm:px-6 lg:px-8 w-full min-w-0">
           
           {/* Top College Intro Header Bar */}
-          <div className="flex flex-col lg:flex-row lg:items-center lg:justify-between gap-4 pb-6 border-b border-white/10">
-            <div className="space-y-1">
-              <div className="inline-flex flex-wrap items-center gap-2 text-xs font-semibold">
-                <span className="bg-[#39A935] text-white px-2.5 py-0.5 rounded-full font-bold uppercase tracking-wider flex items-center gap-1.5 shadow-sm">
+          <div className="flex flex-col lg:flex-row lg:items-center lg:justify-between gap-3 sm:gap-4 pb-4 sm:pb-6 border-b border-white/10 w-full min-w-0">
+            <div className="space-y-1.5 min-w-0">
+              <div className="flex flex-wrap items-center gap-1.5 sm:gap-2 text-[11px] sm:text-xs font-semibold">
+                <span className="bg-[#39A935] text-white px-2 sm:px-2.5 py-0.5 rounded-full font-bold uppercase tracking-wider flex items-center gap-1 shadow-sm shrink-0">
                   <span className="w-1.5 h-1.5 rounded-full bg-white animate-pulse"></span>
                   Admissions Open 2026–27
                 </span>
                 <span className="text-[#a9c7ff]">•</span>
-                <span className="text-gray-200">AICTE Approved, New Delhi</span>
+                <span className="text-gray-200">AICTE Approved</span>
                 <span className="text-[#a9c7ff]">•</span>
-                <span className="text-[#e8a317] font-bold">DOTE Affiliated (Code: 592)</span>
+                <span className="text-[#e8a317] font-bold">DOTE (Code: 592)</span>
               </div>
-              <h1 className="text-2xl sm:text-3xl lg:text-4xl font-headline font-black text-white tracking-tight uppercase">
+              <h1 className="text-xl sm:text-3xl lg:text-4xl font-headline font-black text-white tracking-tight uppercase break-words leading-tight">
                 AKY POLYTECHNIC COLLEGE
               </h1>
-              <p className="text-xs sm:text-sm text-gray-300 font-medium">
+              <p className="text-xs sm:text-sm text-gray-300 font-medium leading-relaxed">
                 (A Unit of AKY Charitable and Educational Trust) • Near M.S. University, Tirunelveli - Tenkasi Main Road
               </p>
             </div>
 
             {/* Quick CTAs on Header */}
-            <div className="flex flex-wrap items-center gap-2.5 sm:gap-3">
+            <div className="flex flex-wrap items-center gap-2 sm:gap-3 shrink-0">
               <a 
                 href={`tel:${collegeInfo.phones[0]}`}
-                className="inline-flex items-center gap-2 bg-white/10 hover:bg-white/20 border border-white/25 text-white px-4 py-2 rounded-lg text-xs sm:text-sm font-bold backdrop-blur-sm transition-colors"
+                className="inline-flex items-center gap-1.5 bg-white/10 hover:bg-white/20 border border-white/25 text-white px-3 sm:px-4 py-1.5 sm:py-2 rounded-lg text-xs sm:text-sm font-bold backdrop-blur-sm transition-colors"
               >
                 <Phone className="w-3.5 h-3.5 text-[#8bfc7c]" />
                 <span>+91 84890 10999</span>
               </a>
               <Link
                 to="/admissions"
-                className="inline-flex items-center gap-2 bg-[#39A935] hover:bg-[#2f8f2c] text-white px-5 py-2 rounded-lg text-xs sm:text-sm font-headline font-bold shadow-lg transition-transform hover:scale-105 active:scale-95"
+                className="inline-flex items-center gap-1.5 bg-[#39A935] hover:bg-[#2f8f2c] text-white px-4 sm:px-5 py-1.5 sm:py-2 rounded-lg text-xs sm:text-sm font-headline font-bold shadow-lg transition-transform hover:scale-105 active:scale-95"
               >
                 <span>Apply Online</span>
                 <ArrowRight className="w-3.5 h-3.5" />
@@ -150,13 +150,13 @@ export default function Home() {
           </div>
 
           {/* Main Grid: Prominent Campus Image Slider (Left) + Admissions Card (Right) */}
-          <div className="grid grid-cols-1 lg:grid-cols-12 gap-6 lg:gap-8 items-stretch pt-6">
+          <div className="grid grid-cols-1 lg:grid-cols-12 gap-6 lg:gap-8 items-stretch pt-5 sm:pt-6 w-full min-w-0">
             
             {/* Left Column: PROMINENT, PROPERLY SIZED CAMPUS IMAGE SHOWCASE SLIDER */}
-            <div className="lg:col-span-7 xl:col-span-8 flex flex-col justify-between">
+            <div className="lg:col-span-7 xl:col-span-8 flex flex-col justify-between w-full min-w-0 overflow-hidden">
               
               {/* Main Slider Display Box */}
-              <div className="relative w-full h-[360px] sm:h-[450px] md:h-[500px] lg:h-[520px] rounded-2xl overflow-hidden shadow-2xl border-2 border-white/25 bg-slate-950 group">
+              <div className="relative w-full h-[250px] sm:h-[400px] md:h-[480px] lg:h-[520px] rounded-2xl overflow-hidden shadow-2xl border-2 border-white/25 bg-slate-950 group">
                 
                 {/* 100% Crisp, Natural Color Photo (NO dark blue wash!) */}
                 <img 
@@ -171,13 +171,13 @@ export default function Home() {
                 />
 
                 {/* Top Badge: Category & Counter */}
-                <div className="absolute top-4 inset-x-4 flex items-center justify-between pointer-events-none z-10">
-                  <span className="inline-flex items-center gap-2 px-3 py-1.5 rounded-full text-xs font-bold text-white bg-black/60 backdrop-blur-md border border-white/20 shadow-lg">
-                    <span className="w-2 h-2 rounded-full bg-[#39A935] animate-pulse"></span>
-                    <span>{heroSlides[currentSlide].tag}</span>
+                <div className="absolute top-2.5 sm:top-4 inset-x-2.5 sm:inset-x-4 flex items-center justify-between pointer-events-none z-10 gap-2">
+                  <span className="inline-flex items-center gap-1.5 px-2.5 sm:px-3 py-1 sm:py-1.5 rounded-full text-[10px] sm:text-xs font-bold text-white bg-black/60 backdrop-blur-md border border-white/20 shadow-lg truncate max-w-[65%]">
+                    <span className="w-1.5 h-1.5 rounded-full bg-[#39A935] animate-pulse shrink-0"></span>
+                    <span className="truncate">{heroSlides[currentSlide].tag}</span>
                   </span>
 
-                  <span className="px-3 py-1.5 rounded-full text-xs font-bold text-white bg-black/60 backdrop-blur-md border border-white/20 shadow-lg">
+                  <span className="px-2 sm:px-3 py-1 sm:py-1.5 rounded-full text-[10px] sm:text-xs font-bold text-white bg-black/60 backdrop-blur-md border border-white/20 shadow-lg shrink-0">
                     Photo {currentSlide + 1} / {heroSlides.length}
                   </span>
                 </div>
@@ -187,9 +187,9 @@ export default function Home() {
                   type="button"
                   onClick={handlePrevSlide}
                   aria-label="Previous Campus Photo"
-                  className="absolute left-3.5 top-1/2 -translate-y-1/2 w-11 h-11 sm:w-12 sm:h-12 rounded-full bg-black/55 hover:bg-black/85 text-white flex items-center justify-center backdrop-blur-md border border-white/30 shadow-2xl hover:scale-110 active:scale-95 transition-all z-20"
+                  className="absolute left-2 sm:left-3.5 top-1/2 -translate-y-1/2 w-8 h-8 sm:w-12 sm:h-12 rounded-full bg-black/55 hover:bg-black/85 text-white flex items-center justify-center backdrop-blur-md border border-white/30 shadow-2xl hover:scale-110 active:scale-95 transition-all z-20"
                 >
-                  <ChevronLeft className="w-6 h-6 sm:w-7 sm:h-7" />
+                  <ChevronLeft className="w-4 h-4 sm:w-7 sm:h-7" />
                 </button>
 
                 {/* Right Arrow Button */}
@@ -197,22 +197,22 @@ export default function Home() {
                   type="button"
                   onClick={handleNextSlide}
                   aria-label="Next Campus Photo"
-                  className="absolute right-3.5 top-1/2 -translate-y-1/2 w-11 h-11 sm:w-12 sm:h-12 rounded-full bg-black/55 hover:bg-black/85 text-white flex items-center justify-center backdrop-blur-md border border-white/30 shadow-2xl hover:scale-110 active:scale-95 transition-all z-20"
+                  className="absolute right-2 sm:right-3.5 top-1/2 -translate-y-1/2 w-8 h-8 sm:w-12 sm:h-12 rounded-full bg-black/55 hover:bg-black/85 text-white flex items-center justify-center backdrop-blur-md border border-white/30 shadow-2xl hover:scale-110 active:scale-95 transition-all z-20"
                 >
-                  <ChevronRight className="w-6 h-6 sm:w-7 sm:h-7" />
+                  <ChevronRight className="w-4 h-4 sm:w-7 sm:h-7" />
                 </button>
 
                 {/* Bottom Caption Overlay (Subtle gradient only at bottom 30% for high readability) */}
-                <div className="absolute inset-x-0 bottom-0 bg-gradient-to-t from-black/90 via-black/50 to-transparent p-4 sm:p-6 z-10">
-                  <p className="text-sm sm:text-lg md:text-xl font-headline font-bold text-white leading-snug drop-shadow-md">
+                <div className="absolute inset-x-0 bottom-0 bg-gradient-to-t from-black/95 via-black/60 to-transparent p-3 sm:p-6 z-10">
+                  <p className="text-xs sm:text-lg md:text-xl font-headline font-bold text-white leading-snug drop-shadow-md line-clamp-2">
                     {heroSlides[currentSlide].title}
                   </p>
-                  <p className="text-xs sm:text-sm text-gray-300 mt-1 drop-shadow leading-tight">
+                  <p className="text-[10px] sm:text-sm text-gray-300 mt-0.5 sm:mt-1 drop-shadow leading-tight line-clamp-2">
                     {heroSlides[currentSlide].subtitle}
                   </p>
                   
                   {/* Slide Indicator Dots */}
-                  <div className="flex items-center gap-1.5 mt-3">
+                  <div className="flex items-center gap-1.5 mt-2 sm:mt-3">
                     {heroSlides.map((_, idx) => (
                       <button
                         key={idx}
@@ -220,7 +220,7 @@ export default function Home() {
                         onClick={() => setCurrentSlide(idx)}
                         aria-label={`Jump to slide ${idx + 1}`}
                         className={`h-1.5 rounded-full transition-all ${
-                          currentSlide === idx ? 'w-7 bg-[#e8a317]' : 'w-2 bg-white/40 hover:bg-white/70'
+                          currentSlide === idx ? 'w-5 sm:w-7 bg-[#e8a317]' : 'w-1.5 sm:w-2 bg-white/40 hover:bg-white/70'
                         }`}
                       />
                     ))}
@@ -230,31 +230,31 @@ export default function Home() {
               </div>
 
               {/* Thumbnails Showcase Underneath */}
-              <div className="mt-3.5">
+              <div className="mt-3 w-full min-w-0">
                 <div className="flex items-center justify-between text-xs text-gray-300 mb-2 font-medium">
-                  <span className="flex items-center gap-1.5 text-white font-bold">
+                  <span className="flex items-center gap-1.5 text-white font-bold text-[11px] sm:text-xs">
                     <Sparkles className="w-3.5 h-3.5 text-[#e8a317]" />
                     <span>Campus Gallery Showcase (Tap to View):</span>
                   </span>
-                  <span className="text-gray-400 hidden sm:inline text-[11px]">
+                  <span className="text-gray-400 text-[10px] sm:text-[11px]">
                     Auto-slides every 5s
                   </span>
                 </div>
 
-                <div className="flex gap-2 overflow-x-auto pb-1 scrollbar-thin">
+                <div className="flex gap-2 overflow-x-auto pb-1 scrollbar-thin w-full max-w-full">
                   {heroSlides.map((slide, idx) => (
                     <button
                       key={idx}
                       type="button"
                       onClick={() => setCurrentSlide(idx)}
-                      className={`relative flex-shrink-0 w-24 sm:w-28 h-16 sm:h-18 rounded-xl overflow-hidden border-2 transition-all group cursor-pointer ${
+                      className={`relative flex-shrink-0 w-20 sm:w-28 h-14 sm:h-18 rounded-xl overflow-hidden border-2 transition-all group cursor-pointer ${
                         currentSlide === idx 
                           ? 'border-[#e8a317] ring-2 ring-[#e8a317]/60 scale-105 shadow-xl' 
                           : 'border-white/20 opacity-70 hover:opacity-100 hover:border-white/60'
                       }`}
                     >
                       <img src={slide.image} alt={slide.tag} className="w-full h-full object-cover" />
-                      <div className="absolute inset-x-0 bottom-0 bg-black/75 text-[10px] text-white py-0.5 truncate px-1 text-center font-bold">
+                      <div className="absolute inset-x-0 bottom-0 bg-black/75 text-[9px] sm:text-[10px] text-white py-0.5 truncate px-1 text-center font-bold">
                         {slide.tag}
                       </div>
                     </button>
@@ -265,8 +265,8 @@ export default function Home() {
             </div>
 
             {/* Right Column: ADMISSIONS 2026-2027 REGISTRATION & PROSPECTUS CARD */}
-            <div className="lg:col-span-5 xl:col-span-4 flex flex-col justify-between">
-              <div className="bg-white rounded-2xl shadow-2xl border border-gray-100 p-5 sm:p-6 text-[#121b2e] flex flex-col justify-between h-full">
+            <div className="lg:col-span-5 xl:col-span-4 flex flex-col justify-between w-full min-w-0">
+              <div className="bg-white rounded-2xl shadow-2xl border border-gray-100 p-4 sm:p-6 text-[#121b2e] flex flex-col justify-between h-full w-full min-w-0">
                 
                 <div>
                   {/* Card Header */}
@@ -407,14 +407,14 @@ export default function Home() {
       </section>
 
       {/* QUICK METRICS BAR ("AKY AT A GLANCE") */}
-      <section className="relative -mt-6 sm:-mt-8 z-20 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="bg-white rounded-xl shadow-xl border border-gray-100 p-6 md:p-8">
-          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-6 gap-6 divide-y sm:divide-y-0 sm:divide-x divide-gray-100 items-center">
+      <section className="relative -mt-6 sm:-mt-8 z-20 max-w-7xl mx-auto px-3 sm:px-6 lg:px-8 w-full min-w-0">
+        <div className="bg-white rounded-xl shadow-xl border border-gray-100 p-4 sm:p-6 md:p-8">
+          <div className="grid grid-cols-2 md:grid-cols-6 gap-4 sm:gap-6 divide-y-0 sm:divide-x divide-gray-100 items-center">
             
             {/* Pillar Title */}
-            <div className="md:col-span-2 pr-4 space-y-1">
+            <div className="col-span-2 pr-0 md:pr-4 space-y-1">
               <div className="inline-block w-8 h-1 bg-[#0756a6] mb-1"></div>
-              <h2 className="text-xl sm:text-2xl font-headline font-bold text-[#0756a6]">
+              <h2 className="text-lg sm:text-2xl font-headline font-bold text-[#0756a6]">
                 AKY at a Glance
               </h2>
               <p className="text-xs sm:text-sm text-gray-600">
@@ -423,43 +423,43 @@ export default function Home() {
             </div>
 
             {/* Metric 1: Established */}
-            <div className="pt-4 sm:pt-0 sm:px-3 text-center">
+            <div className="pt-2 sm:pt-0 sm:px-3 text-center border-t sm:border-t-0 border-gray-100">
               <div className="flex justify-center mb-1 text-[#0756a6]">
-                <Calendar className="w-7 h-7" />
+                <Calendar className="w-6 h-6 sm:w-7 sm:h-7" />
               </div>
-              <p className="text-2xl sm:text-3xl font-headline font-bold text-gray-900">2015</p>
-              <p className="text-[11px] font-bold uppercase tracking-wider text-gray-500">Established</p>
+              <p className="text-xl sm:text-3xl font-headline font-bold text-gray-900">2015</p>
+              <p className="text-[10px] sm:text-[11px] font-bold uppercase tracking-wider text-gray-500">Established</p>
             </div>
 
             {/* Metric 2: AICTE */}
-            <div className="pt-4 sm:pt-0 sm:px-3 text-center">
+            <div className="pt-2 sm:pt-0 sm:px-3 text-center border-t sm:border-t-0 border-gray-100">
               <div className="flex justify-center mb-1 text-[#e8a317]">
-                <Award className="w-7 h-7" />
+                <Award className="w-6 h-6 sm:w-7 sm:h-7" />
               </div>
-              <p className="text-2xl sm:text-3xl font-headline font-bold text-gray-900">AICTE</p>
-              <p className="text-[11px] font-bold uppercase tracking-wider text-gray-500">Approved</p>
+              <p className="text-xl sm:text-3xl font-headline font-bold text-gray-900">AICTE</p>
+              <p className="text-[10px] sm:text-[11px] font-bold uppercase tracking-wider text-gray-500">Approved</p>
             </div>
 
             {/* Metric 3: DOTE */}
-            <div className="pt-4 sm:pt-0 sm:px-3 text-center">
+            <div className="pt-2 sm:pt-0 sm:px-3 text-center border-t sm:border-t-0 border-gray-100">
               <div className="flex justify-center mb-1 text-[#003f7e]">
-                <Building2 className="w-7 h-7" />
+                <Building2 className="w-6 h-6 sm:w-7 sm:h-7" />
               </div>
-              <p className="text-2xl sm:text-3xl font-headline font-bold text-gray-900">DOTE</p>
-              <p className="text-[11px] font-bold uppercase tracking-wider text-gray-500">Affiliated (592)</p>
+              <p className="text-xl sm:text-3xl font-headline font-bold text-gray-900">DOTE</p>
+              <p className="text-[10px] sm:text-[11px] font-bold uppercase tracking-wider text-gray-500">Affiliated (592)</p>
             </div>
 
             {/* Metric 4: Programs & Intake */}
-            <div className="pt-4 sm:pt-0 sm:pl-3 text-center">
+            <div className="pt-2 sm:pt-0 sm:pl-3 text-center border-t sm:border-t-0 border-gray-100">
               <div className="flex justify-center mb-1 text-[#39A935]">
-                <Users className="w-7 h-7" />
+                <Users className="w-6 h-6 sm:w-7 sm:h-7" />
               </div>
-              <p className="text-2xl sm:text-3xl font-headline font-bold text-gray-900">4+ | 60</p>
-              <p className="text-[11px] font-bold uppercase tracking-wider text-gray-500">Diploma Programs*</p>
+              <p className="text-xl sm:text-3xl font-headline font-bold text-gray-900">4+ | 60</p>
+              <p className="text-[10px] sm:text-[11px] font-bold uppercase tracking-wider text-gray-500">Programs*</p>
             </div>
 
           </div>
-          <p className="text-[11px] text-right text-gray-400 mt-4">
+          <p className="text-[10px] sm:text-[11px] text-right text-gray-400 mt-3 sm:mt-4">
             * 60 Approved Student Intake capacity per Engineering branch as governed by AICTE norms.
           </p>
         </div>
@@ -900,22 +900,22 @@ export default function Home() {
               </div>
 
               {/* Placement Timeline Pathway */}
-              <div className="bg-white p-4 rounded-xl border border-gray-200/70 flex flex-wrap items-center justify-between gap-2 text-xs font-headline uppercase font-bold text-gray-600 shadow-sm">
+              <div className="bg-white p-3 sm:p-4 rounded-xl border border-gray-200/70 flex flex-wrap items-center justify-between gap-2 text-[11px] sm:text-xs font-headline uppercase font-bold text-gray-600 shadow-sm">
                 <span className="flex items-center gap-1.5 text-[#0756a6]">
                   <span className="w-2 h-2 rounded-full bg-[#0756a6]"></span>
                   Technical Training
                 </span>
-                <span className="text-gray-300">→</span>
+                <span className="text-gray-300 hidden sm:inline">→</span>
                 <span className="flex items-center gap-1.5 text-[#0756a6]">
                   <span className="w-2 h-2 rounded-full bg-[#0756a6]"></span>
                   Aptitude Drills
                 </span>
-                <span className="text-gray-300">→</span>
+                <span className="text-gray-300 hidden sm:inline">→</span>
                 <span className="flex items-center gap-1.5 text-[#0756a6]">
                   <span className="w-2 h-2 rounded-full bg-[#0756a6]"></span>
                   Soft Skills
                 </span>
-                <span className="text-gray-300">→</span>
+                <span className="text-gray-300 hidden sm:inline">→</span>
                 <span className="flex items-center gap-1.5 text-[#39A935]">
                   <span className="w-2 h-2 rounded-full bg-[#39A935]"></span>
                   Campus Interviews

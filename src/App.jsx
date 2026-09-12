@@ -23,12 +23,12 @@ import Admin from './pages/Admin';
 
 export default function App() {
   return (
-    <div className="min-h-screen flex flex-col bg-surface text-on-surface">
+    <div className="min-h-screen flex flex-col bg-surface text-on-surface w-full max-w-full overflow-x-hidden">
       <ScrollToTop />
       <TopBar />
       <Navbar />
 
-      <main className="flex-1">
+      <main className="flex-1 w-full max-w-full overflow-x-hidden">
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/about" element={<About />} />
