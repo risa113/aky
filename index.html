@@ -30,14 +30,28 @@
   <body class="bg-surface text-on-surface font-sans antialiased selection:bg-primary selection:text-white">
     <div id="root"></div>
     <script type="text/javascript">
-      // If raw root index.html is served on GitHub Pages and fails to mount, redirect to pre-built /docs/
+      // If raw root index.html is served on GitHub Pages without Vite dev server, load pre-bundled assets directly
+      if (window.location.hostname.endsWith('github.io') && !window.location.pathname.includes('/docs')) {
+        if (!document.querySelector('script[src*="assets/"]')) {
+          var css = document.createElement('link');
+          css.rel = 'stylesheet';
+          css.href = './assets/index.css';
+          document.head.appendChild(css);
+
+          var script = document.createElement('script');
+          script.type = 'module';
+          script.crossOrigin = 'anonymous';
+          script.src = './assets/index.js';
+          document.body.appendChild(script);
+        }
+      }
       setTimeout(function() {
         var root = document.getElementById('root');
         if (root && root.children.length === 0 && window.location.hostname.endsWith('github.io') && !window.location.pathname.includes('/docs')) {
           var basePath = window.location.pathname.replace(/\/$/, '');
           window.location.replace(basePath + '/docs/' + (window.location.hash || ''));
         }
-      }, 600);
+      }, 700);
     </script>
   </body>
 </html>
